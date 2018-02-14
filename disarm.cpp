@@ -448,9 +448,8 @@ string getRegisterList(bool Ins[32]) {
 
 //----------------------------------------
 string getS(bool Ins[32]) {
-	string result = "";
-	if (Ins[20]) result = "S"; // if (S == 1)
-	return result;
+	if (Ins[20]) return "S"; // if (S == 1)
+	else return "";
 }
 
 //----------------------------------------
@@ -473,9 +472,8 @@ string getR(bool Ins[32]) {
 
 //----------------------------------------
 string getL(bool Ins[32]) {
-	string result = "";
-	if (Ins[24]) result = "L"; // if (L == 1)
-	return result;
+	if (Ins[24]) return "L"; // if (L == 1)
+	else return "";
 }
 
 //----------------------------------------
